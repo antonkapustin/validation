@@ -1,0 +1,56 @@
+.form {
+  width: 100%;
+  &__container {
+    display: flex;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 50px;
+    &_row {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    font-size: 25px;
+  }
+  &__input,
+  .form__select {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid @color-gray;
+    margin-bottom: 30px;
+    background-color: @color-lightgray;
+  }
+  &__textarea {
+    font-size: 18px;
+    background-color: @color-lightgray;
+    padding: 10px 10px 10px 5px;
+    resize: none;
+    height: 100px;
+  }
+  &__select {
+  }
+  &__divider {
+    width: 100%;
+    height: 1px;
+  }
+  &__checkbox {
+    height: 30px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  &__radio {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+}
