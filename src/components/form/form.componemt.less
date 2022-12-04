@@ -29,6 +29,10 @@
     border-bottom: 1px solid @color-gray;
     margin-bottom: 30px;
     background-color: @color-lightgray;
+    &:invalid {
+      animation: shake 0.2s ease-in-out 0s 2;
+      border-color: red;
+    }
   }
   &__textarea {
     font-size: 18px;
@@ -36,6 +40,10 @@
     padding: 10px 10px 10px 5px;
     resize: none;
     height: 100px;
+    &:invalid {
+      animation: shake 0.2s ease-in-out 0s 2;
+      border-color: red;
+    }
   }
   &__select {
   }
@@ -52,5 +60,26 @@
     height: 20px;
     width: 20px;
     margin-right: 10px;
+  }
+  &__button {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
   }
 }
