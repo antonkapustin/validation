@@ -8,13 +8,14 @@
   </head>
   <body>
     <h1 class="title">Validation form</h1>
-    <form class="form">
+    <form class="form" name="test">
       <div class="form__container">
         <label class="form__label">
           <span class="form__title">First Name</span>
           <input
             class="form__input"
             type="text"
+            name="name"
             placeholder="Enter your first name"
           />
         </label>
@@ -23,6 +24,7 @@
           <input
             class="form__input"
             type="text"
+            name="lastName"
             placeholder="Enter your last name"
           />
         </label>
@@ -32,6 +34,8 @@
         <input
           class="form__input"
           type="email"
+          name="email"
+          data-pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           placeholder="Enter your Email"
         />
       </label>
@@ -40,6 +44,7 @@
         <input
           class="form__input"
           type="text"
+          name="address"
           placeholder="Enter your Address"
         />
       </label>
@@ -48,26 +53,27 @@
         <input
           class="form__input"
           type="text"
+          name="address2"
           placeholder="Enter your Address"
         />
       </label>
       <div class="form__container">
         <label class="form__label">
-          <span class="form__title">Country</span>
+          <span class="form__title" name="country">Country</span>
           <select class="form__select">
-            <option class="form__option">Choose...</option>
-            <option class="form__option">US</option>
-            <option class="form__option">Belarus</option>
-            <option class="form__option">Ukraine</option>
+            <option class="form__option" value="1">Choose...</option>
+            <option class="form__option" value="2">US</option>
+            <option class="form__option" value="3">Belarus</option>
+            <option class="form__option" value="4">Ukraine</option>
           </select>
         </label>
         <label class="form__label">
-          <span class="form__title">State</span>
+          <span class="form__title" name="state">State</span>
           <select class="form__select">
-            <option class="form__option">Choose...</option>
-            <option class="form__option">California</option>
-            <option class="form__option">Hrodno</option>
-            <option class="form__option">Kiev</option>
+            <option class="form__option" value="1">Choose...</option>
+            <option class="form__option" value="2">California</option>
+            <option class="form__option" value="3">Hrodno</option>
+            <option class="form__option" value="4">Kiev</option>
           </select>
         </label>
         <label class="form__label">
@@ -75,6 +81,7 @@
           <input
             class="form__input"
             type="text"
+            name="zip"
             placeholder="Enter your Address"
           />
         </label>
@@ -84,11 +91,12 @@
         <textarea
           class="form__textarea"
           column="2"
+          name="discription"
           placeholder="Enter your discription"
         ></textarea>
       </label>
       <label class="form__label form__label_row">
-        <input class="form__checkbox" type="checkbox" />
+        <input class="form__checkbox" type="checkbox" name="saveData" />
         <span class="form__title">Save this information for next time</span>
       </label>
       <span class="form__title">Payment</span>
