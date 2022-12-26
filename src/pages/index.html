@@ -15,7 +15,7 @@
           <input
             class="form__input"
             type="text"
-            name="name"
+            formControll="name"
             placeholder="Enter your first name"
           />
         </label>
@@ -24,7 +24,7 @@
           <input
             class="form__input"
             type="text"
-            name="lastName"
+            formControll="lastname"
             placeholder="Enter your last name"
           />
         </label>
@@ -34,8 +34,7 @@
         <input
           class="form__input"
           type="email"
-          name="email"
-          data-pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          formControll="email"
           placeholder="Enter your Email"
         />
       </label>
@@ -44,7 +43,7 @@
         <input
           class="form__input"
           type="text"
-          name="address"
+          formControll="address"
           placeholder="Enter your Address"
         />
       </label>
@@ -53,14 +52,14 @@
         <input
           class="form__input"
           type="text"
-          name="address2"
+          formControll="address2"
           placeholder="Enter your Address"
         />
       </label>
       <div class="form__container">
         <label class="form__label">
-          <span class="form__title" name="country">Country</span>
-          <select class="form__select">
+          <span class="form__title">Country</span>
+          <select class="form__select" formControll="country">
             <option class="form__option" value="1">Choose...</option>
             <option class="form__option" value="2">US</option>
             <option class="form__option" value="3">Belarus</option>
@@ -68,8 +67,8 @@
           </select>
         </label>
         <label class="form__label">
-          <span class="form__title" name="state">State</span>
-          <select class="form__select">
+          <span class="form__title">State</span>
+          <select class="form__select" formControll="state">
             <option class="form__option" value="1">Choose...</option>
             <option class="form__option" value="2">California</option>
             <option class="form__option" value="3">Hrodno</option>
@@ -81,7 +80,7 @@
           <input
             class="form__input"
             type="text"
-            name="zip"
+            formControll="zip"
             placeholder="Enter your Address"
           />
         </label>
@@ -91,26 +90,45 @@
         <textarea
           class="form__textarea"
           column="2"
-          name="discription"
+          formControll="discription"
           placeholder="Enter your discription"
         ></textarea>
       </label>
       <label class="form__label form__label_row">
-        <input class="form__checkbox" type="checkbox" name="saveData" />
+        <input
+          class="form__checkbox"
+          type="checkbox"
+          formControll="information"
+        />
         <span class="form__title">Save this information for next time</span>
       </label>
       <span class="form__title">Payment</span>
       <div class="form__container">
         <label class="form__label form__label_row">
-          <input class="form__radio" type="radio" name="payment" />
+          <input
+            class="form__radio"
+            type="radio"
+            name="payment"
+            formControll="payment"
+          />
           <span class="form__title">Credit card</span>
         </label>
         <label class="form__label form__label_row">
-          <input class="form__radio" type="radio" name="payment" />
+          <input
+            class="form__radio"
+            type="radio"
+            name="payment"
+            formControll="payment"
+          />
           <span class="form__title">Debit card</span>
         </label>
         <label class="form__label form__label_row">
-          <input class="form__radio" type="radio" name="payment" />
+          <input
+            class="form__radio"
+            type="radio"
+            name="payment"
+            formControll="payment"
+          />
           <span class="form__title">PayPal</span>
         </label>
       </div>
